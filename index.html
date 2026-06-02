@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Inclusive+Sans&family=Inter:wght@400;500&family=Poppins:wght@400;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="portal-locked">
+
+    <!-- Scène 3D (position relative pour permettre le scroll) -->
+    <div class="scene-3d" id="scene-3d">
+        <div class="camera" id="camera">
+            
+            <div class="building building-a" id="building-a">
+                <div class="flash-screen" id="flash-screen"></div>
+
+                <header class="portal-header">
+                    <div class="logo">
+                        <span class="logo-main">PORTAIL</span>
+                        <span class="logo-sub">Portfolio</span>
+                    </div>
+                    <a href="admin.html" class="btn-admin-portal" id="admin-portal-link" aria-label="Espace Admin">
+                        <span class="admin-icon" aria-hidden="true">⚙</span>
+                        <span class="admin-text">Admin</span>
+                    </a>
+                </header>
+
+                <div class="portal-hero-content">
+                    <h1 class="portal-title">Là où le code rencontre l'opportunité</h1>
+                    <p class="portal-subtitle"> <strong>Promo 14</strong> de l'École 241</p>
+                </div>
+
+                <div class="portal-frame">
+                    <div class="portal-wall-left"></div>
+                    <div class="portal-wall-right"></div>
+                    <div class="portal-arch"></div>
+                    
+                    <div class="central-gate-container" id="central-gate-container">
+                        <div class="gate-door door-left" id="door-left"></div>
+                        <div class="gate-door door-right" id="door-right"></div>
+                        <div class="gate-glow"></div>
+                        <a href="page2/index2.html" class="btn-primary-portal" id="open-portal-btn">Ouvrir le Portail</a>
+                    </div>
+                </div>
+
+                <footer class="portal-footer">
+                    <div class="footer-content">
+                        <p class="sponsors-title">Soutenu par nos partenaires</p>
+                        <div class="sponsors-logos-row">
+                            <img src="assets/images/og.png" alt="Ogooué Labs" class="sponsor-logo">
+                            <img src="assets/images/dclic.png" alt="D-Clic" class="sponsor-logo">
+                            <img src="assets/images/oif.png" alt="OIF" class="sponsor-logo">
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <div class="building building-b" id="building-b">
+                <div class="main-content">
+                    <!-- Contenu du portfolio ici -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

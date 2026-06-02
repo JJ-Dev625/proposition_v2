@@ -1,0 +1,110 @@
+/* --- 1. Variables globales & Imports --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&family=Roboto&family=Sora:wght@400&family=Inter:wght@400;600&display=swap');
+
+:root {
+    --bleu-lavande: #EFF0FE;
+    --bleu-roi-fonce: #1B407D;
+    --blanc: #ffffff;
+    --gris-clair: #666666;
+    --bleu-sombre: #242D3C;
+    --input-bg: #E6E6E6;
+    --label-color: #294C85;
+    --footer-bg: #142643;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--bleu-lavande);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: var(--gris-clair);
+}
+
+/* --- 2. Header & Nav --- */
+header {
+    background-color: var(--blanc);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* --- 3. Section Hero --- */
+.hero {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: 80px;
+    color: var(--bleu-roi-fonce);
+    margin-bottom: 10px;
+}
+
+/* --- 4. Cards & Grid --- */
+#developer-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.dev-card {
+    background: var(--blanc);
+    border: 1px solid var(--bleu-sombre);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+}
+
+.dev-photo {
+    width: 128px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: #ddd; /* Placeholder */
+}
+
+.dev-name { font-family: 'Sora', sans-serif; font-size: 30px; color: #000; }
+.dev-role { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 15px; }
+
+/* --- 5. Boutons --- */
+.btn-portfolio {
+    background-color: var(--bleu-roi-fonce);
+    color: var(--blanc);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 5px 26px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-submit {
+    background-color: var(--bleu-roi-fonce);
+    color: var(--blanc);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 20px 10px;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+
+/* --- 6. Formulaire --- */
+form { max-width: 600px; margin: 40px auto; padding: 20px; }
+.form-label { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 35px; color: var(--label-color); }
+.form-input { background-color: var(--input-bg); border-radius: 15px; border: none; padding: 15px; width: 100%; margin-bottom: 15px; }
+
+/* --- 7. Footer --- */
+footer { background-color: var(--footer-bg); color: var(--blanc); padding: 40px 5%; text-align: center; }
+
+/* --- 8. Responsive Design --- */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 40px; }
+    .form-label { font-size: 24px; }
+    header { justify-content: center; gap: 20px; }
+}

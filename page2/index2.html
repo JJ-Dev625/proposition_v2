@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Portfolio - Promo 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><strong>PORTAIL</strong> Portfolio</div>
+        <nav>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Rechercher par nom ou type..." autocomplete="off">
+                <div id="suggestions" class="suggestions-box"></div>
+                <select id="filterSelect">
+                    <option value="tous">Tous</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                </select>
+                <button id="searchBtn">Rechercher</button>
+            </div>
+            <ul><li><a href="#contact">Nous contacter</a></li></ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Bienvenue sur le Portail des Talents</h1>
+        <p>Découvrez les futurs experts du web de la promo 14.</p>
+    </div>
+    <div class="hero-image">
+        <img src="dev.png" alt="Illustration" style="width: 100%; height: auto;">
+    </div>
+</section>
+
+
+    <main id="developer-list"></main>
+
+    <section id="contact">
+        <form>
+            <label class="form-label">Laissez-nous un message</label>
+            <input type="text" class="form-input" placeholder="Nom">
+            <input type="email" class="form-input" placeholder="Email">
+            <input type="text" class="form-input" placeholder="Contact">
+            <textarea class="form-input" placeholder="Message"></textarea>
+            <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><strong>PORTAIL</strong> Portfolio</div>
+            <div class="footer-social">LinkedIn | Discord | Github</div>
+        </div>
+        <hr style="border: 0; border-top: 1px solid white; margin: 20px 0;">
+        <div class="copyright">© 2026 Ecole241. Tous droits réservés.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
